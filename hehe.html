@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sling Puck Game</title>
+  <link rel="stylesheet" href="hehe.css" />
+</head>
+<body>
+  <div class="game-container">
+    <!-- Game Title -->
+    <h1 class="title">Sling Puck Showdown</h1>
+
+    <!-- Turn, Score and Timer -->
+    <div class="status-bar">
+      <div id="turn">Turn: Player 1</div>
+      <div id="score">Player 1: 5 | Player 2: 5</div>
+      <div id="timerDisplay">⏱️ 15s</div>
+    </div>
+
+    <!-- Player Labels -->
+    <!-- Player Labels -->
+<div class="labels">
+  <div class="player-label left">Player 1</div>
+  <div class="player-label right">Player 2</div>
+</div>
+
+
+    <!-- Game Canvas -->
+    <canvas id="gameCanvas" width="800" height="400"></canvas>
+
+    <!-- Power Meter -->
+    <div class="controls">
+      <label for="powerBar">Power:</label>
+      <progress id="powerBar" value="0" max="100"></progress>
+    </div>
+
+    <!-- Restart Confirmation Modal -->
+<div id="restartModal" class="modal hidden">
+  <div class="modal-content">
+    <p>Are you sure you want to restart the game?</p>
+    <button id="confirmRestartBtn">Restart</button>
+    <button id="cancelRestartBtn">Cancel</button>
+  </div>
+</div>
+
+
+    <!-- Footer Controls -->
+    <div class="footer">
+      <div></div> <!-- Empty space for layout balance -->
+      <div id="winner"></div>
+      <button id="restartBtn" onclick="restartGame()">Restart</button>
+    </div>
+  </div>
+
+  <script src="hehe.js"></script>
+  <div class="developer">Developer: Khaldoon Ihsan</div>
+
+</body>
+</html>

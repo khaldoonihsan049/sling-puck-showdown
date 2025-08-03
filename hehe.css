@@ -1,0 +1,190 @@
+body {
+  background: linear-gradient(#76654e, #ecd6ba);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.game-container {
+  width: 950px;
+  text-align: center;
+}
+div{
+    margin: 10px;
+    border-radius: 8px;
+
+
+}
+
+canvas {
+  border: 6px solid #4b3f30;
+  background-image: url("wood.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+    border-radius: 12px;
+  display: block;
+  margin: 15px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 20);
+  
+}
+
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+#timerDisplay {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #b22222;
+}
+
+h1{
+    font-size: 2.5rem;
+    color: #3e2c1c;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+#powerBar {
+  width: 300px;
+  height: 18px;
+  vertical-align: left;
+  border-radius: 40px;
+}
+
+#winner {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: green;
+}
+
+.labels {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 30px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.player-label.left {
+  text-align: left;
+}
+
+.player-label.right {
+  text-align: right;
+}
+
+
+.title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #3e2c1c;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  animation: fadeInDown 0.8s ease-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  } 
+}
+
+.developer {
+  position: fixed;
+  bottom: 10px;
+  left: 25px;
+  font-size: 1.2rem;
+  color: #492a13;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  padding: 0 20px;
+}
+
+#restartBtn {
+  padding: 8px 15px;
+  font-size: 15px;
+  background-color: #5c4324;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#restartBtn:hover {
+  background-color: #3b2b18;
+}
+
+/* Restart Modal Styling */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 30, 30, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.modal-content {
+  background: #fff8f0;
+  padding: 20px 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px #00000088;
+}
+
+.modal-content button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#confirmRestartBtn {
+  background-color: #5c4324;
+  color: white;
+}
+
+#confirmRestartBtn:hover {
+  background-color: #3b2b18;
+}
+
+#cancelRestartBtn {
+  background-color: #bbb;
+}
+
+.hidden {
+  display: none;
+}
